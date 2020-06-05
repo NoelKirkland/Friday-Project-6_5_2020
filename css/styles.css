@@ -1,0 +1,25 @@
+  
+#answer {
+  display: none;
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+span{
+  font-weight: bold;
+  color: blue;
+}
+#front-showing {
+  display: none;
+}
+#back-showing {
+  display: none;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #0088cc;
+}
+.clickable:hover {
+  text-decoration: underline;
+}
