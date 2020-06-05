@@ -12,7 +12,8 @@ $(document).ready(function(){
     const pref = $("input:radio[name=preference]:checked").val();
     const availability = parseInt($("input#hours-available").val());
     const personality = $("#personality-type").val();
-    if(pref !== "front-end" || pref !== "back-end"){
+    
+    if(pref !== "front-end" && pref !== "back-end"){
       alert("please select one of the radio buttons")
     }
     else if(availability <= 0 || availability > 24){
@@ -21,6 +22,8 @@ $(document).ready(function(){
     else if(!availability){
       alert("Please input only numbers");
     }
+    else if(personality === "")
+      alert("please select a personality type")
     else{
 
       if(pref === "front-end" && (availability >=1 && availability <=6) && (personality === "Extroverted & Passive")){
