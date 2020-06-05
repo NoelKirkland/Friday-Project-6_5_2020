@@ -20,10 +20,18 @@ $(document).ready(function(){
     }
     else{
 
-      if(pref === "front-end" && (availability >=1 || availability <=4) && (personality === "Extroverted & Passive")){
+      if(pref === "front-end" && (availability >=1 && availability <=6) && (personality === "Extroverted & Passive")){
         $("#match").text("HTML");
       }
-
+      else if(pref === "front-end" && (availability >=1 && availability <=6) && (personality === "Extroverted & Aggressive")){
+        $("#match").text("CSS");
+      }
+      else if(pref === "front-end" && (availability >=7 && availability <=12) && (personality === "Extroverted & Passive" || personality === "Extroverted & Aggressive")){
+        $("#match").text("JavaScript");
+      }
+      else{
+        $("#match").text("Doesn't fit and current chriteria");
+      }
       $("#answer").show();
     }
     event.preventDefault();
