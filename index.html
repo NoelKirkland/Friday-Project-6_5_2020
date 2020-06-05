@@ -37,8 +37,8 @@
                 </label>
                 </div>
         </div>
-<!-- Beggining of additional form stuff -->
-        <div class="form-group-testa">
+
+        <div class="form-group-b">
           <label for="experience">How much coding experience do you have:</label>
           <select class="form-control" id="experience">
               <option></option>
@@ -47,30 +47,31 @@
               <option>A moderate amount</option>
           </select>
       </div>
-      <div class="form-group-testb">
-        <label for="days-available">How many days per week do you think you commit yourslef to learning a Programming language:</label>
-        <input id="days-available" class="form-control" type="text">
-    </div>
-<!-- End of additional form stuff -->
-          <div class="form-group-b">
-                <label for="hours-available">How many hours per day do you think you commit yourslef to learning a Programming language:</label>
-                <input id="hours-available" class="form-control" type="text">
-            </div>
             
             <div class="form-group-c">
-                <label for="personality-type">Which of these four personality types do you think best describes your self:</label>
-                <select class="form-control" id="personality-type">
-                    <option></option>
-                    <option>Introverted & Passive</option>
-                    <option>Extroverted & Passive</option>
-                    <option>Introverted & Aggressive</option>
-                    <option>Extroverted & Aggressive</option>
-                </select>
+              <label for="personality-type">Which of these four personality types do you think best describes your self:</label>
+              <select class="form-control" id="personality-type">
+                <option></option>
+                <option>Introverted & Passive</option>
+                <option>Extroverted & Passive</option>
+                <option>Introverted & Aggressive</option>
+                <option>Extroverted & Aggressive</option>
+              </select>
             </div>
+
+            <div class="form-group-b">
+              <label for="hours-available">How many hours per day do you think you commit yourslef to learning a Programming language:</label>
+              <input id="hours-available" class="form-control" type="text">
+            </div>
+            <div class="form-group-testb">
+              <label for="days-available">How many days per week do you think you commit yourslef to learning a Programming language:</label>
+              <input id="days-available" class="form-control" type="text">
+            </div>
+
             <button type="submit" class="btn">Submit</button>
         </form> 
         <div id="answer">
-            <p>Your best match is: <span id="match"></span>, and it would take you <span id="output"></span>weeks to master it.</p>
+            <p>Your best match is <span id="match"></span> and, by spending <span id="days-show"></span> , you could be a master of <span id="match"></span> in just <span id="output"></span> weeks!</p>
         </div>
   </div>
 </body>
