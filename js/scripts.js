@@ -26,8 +26,23 @@ $(document).ready(function(){
       else if(pref === "front-end" && (availability >=1 && availability <=6) && (personality === "Extroverted & Aggressive")){
         $("#match").text("CSS");
       }
-      else if(pref === "front-end" && (availability >=7 && availability <=12) && (personality === "Extroverted & Passive" || personality === "Extroverted & Aggressive")){
+      else if(pref === "front-end" && (availability >=1 && availability <=6) && (personality === "Introverted & Passive" || personality === "Introverted & Aggressive")){
         $("#match").text("JavaScript");
+      }
+      else if(pref === "front-end" && (availability >=7 && availability <=12) && (personality === "Extroverted & Passive")){
+        $("#match").text("HTML as well as CSS");
+      }
+      else if(pref === "front-end" && (availability >=7 && availability <=12) && (personality === "Extroverted & Aggressive")){
+        $("#match").text("CSS as well as Bootstrap");
+      }
+      else if(pref === "front-end" && (availability >=7 && availability <=12) && (personality === "Introverted & Passive" || personality === "Introverted & Aggressive")){
+        $("#match").text("JavaScript as well as JQuery");
+      }
+      else if(pref === "front-end" && (availability >12) && (personality === "Extroverted & Passive" || personality === "Extroverted & Aggressive")){
+        $("#match").text("HTML, CSS, and Bootstrap");
+      }
+      else if(pref === "front-end" && (availability >12) && (personality === "Introverted & Passive" || personality === "Introverted & Aggressive")){
+        $("#match").text("JavaScript, JQuery, and React.js");
       }
       else{
         $("#match").text("Doesn't fit and current chriteria");
