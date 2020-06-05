@@ -21,7 +21,38 @@
       <p>back end description</p>
     </div>
 
+    <form id="info">
+          <div class="form-group-a">
+            <label for="interest">Which do you think would best fit your personality, front-end or back-end?</label>
+            <div class="radio">
+                <label>
+                <input type="radio" name="preference" value="front-end" checked>
+                    front-end
+                </label>
+                </div>
+                <div class="radio">
+                <label>
+                    <input type="radio" name="preference" value="front-end">
+                    back-end
+                </label>
+                </div>
+        </div>
 
+          <div class="form-group-b">
+                <label for="hours-available">How many hours per day do you think you commit yourslef to learning a Programming language:</label>
+                <input id="hours-available" class="form-control" type="text">
+            </div>
+            
+            <div class="form-group-c">
+                <label for="personality-type">Which of these four personality types do you think best describes your self:</label>
+                <select class="form-control" id="personality-type">
+                    <option></option>
+                    <option>Introverted & Passive</option>
+                    <option>Extroverted & Passive</option>
+                    <option>Introverted & Aggressive</option>
+                    <option>Extroverted & Passive</option>
+                </select>
+            </div>
             <button type="submit" class="btn">Submit</button>
         </form> 
         <div id="answer">
