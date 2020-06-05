@@ -12,7 +12,10 @@ $(document).ready(function(){
     const pref = $("input:radio[name=preference]:checked").val();
     const availability = parseInt($("input#hours-available").val());
     const personality = $("#personality-type").val();
-    if(availability <= 0 || availability > 24){
+    if(pref !== "front-end" || pref !== "back-end"){
+      alert("please select one of the radio buttons")
+    }
+    else if(availability <= 0 || availability > 24){
       alert("Please enter a numnber between 1 and 24");
     }
     else if(!availability){
