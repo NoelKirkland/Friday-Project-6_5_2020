@@ -12,7 +12,9 @@ $(document).ready(function(){
     const pref = $("input:radio[name=preference]:checked").val();
     const availability = parseInt($("input#hours-available").val());
     const personality = $("#personality-type").val();
-    
+
+    // I just re-read the prompt and it actually says that I need FIVE survey questions, not THREE! I am panicking a little bit But I will do my best.
+
     if(pref !== "front-end" && pref !== "back-end"){
       alert("please select one of the radio buttons")
     }
