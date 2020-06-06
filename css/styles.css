@@ -11,19 +11,19 @@ span{
 }
 #front-showing {
   display: none;
-  border: 2px black;
   font-style: italic;
   font-weight: bold;
   margin-left: 50px;
 }
 #back-showing {
-  color:black;
-  content: open-quote;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+  display: none;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 50px;
 }
 .clickable {
   cursor: pointer;
-  color: #0088cc;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
 }
