@@ -1,29 +1,38 @@
-  
-#answer {
-  display: none;
-  margin-top: 40px;
-  font-size: 24px;
-}
-
-span{
-  font-weight: bold;
-  color: blue;
-}
 #front-showing {
   display: none;
   font-style: italic;
   font-weight: bold;
-  margin-left: 50px;
 }
 #back-showing {
   display: none;
   font-style: italic;
   font-weight: bold;
-  margin-left: 50px;
 }
 .clickable {
   cursor: pointer;
   font-style: italic;
   font-weight: bold;
   color: black;
+}
+#info {
+  width: 250px;
+  margin: 40px;
+}
+.form-control{
+  width: 200px;
+}
+.form-control-box {
+  width: 50px;
+}
+#answer {
+  display: none;
+  margin-top: 40px;
+  font-size: 24px;
+}
+.results {
+  font-style: italic;
+}
+#disclaimer-small {
+  font-size: small;
+  font-style: italic;
 }

@@ -1,79 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery.js"></script>
-  <script src="js/scripts.js"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programming Language Suggester</title>
-</head>
-<body>
-  <div class="container">
-    <h2>Fill out the information below to help identify which coding languange is right for you!</h2>
-    <p>So, you have been thinking about getting into computer programming but you are just not sure which computer programming language is right for you. Have you ever thought about if you might like <span class="clickable" id="front-end">front-end</span> language as opposed to a <span class="clickable" id="back-end">back-end</span> language? How much time would you be able to spend learning something new like this? Or what about you as a person; have you ever thought about which language might be most compatible with your personality? Hopefully this webpage can help you clear up some of those questions and suggest which programming language is best for you.</p>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Language Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Fill out the information below to help identify which coding languange is right for you!</h2>
+      <p>So, you have been thinking about getting into computer programming but you are just not sure which computer programming language is right for you. Have you ever thought about if you might like a <span class="clickable" id="front-end">front-end</span> language as opposed to a <span class="clickable" id="back-end">back-end</span> language? Or what about you as a person; have you ever thought about which language might be most compatible with your personality? Have you thought about how many long hours it might take studying to become a master computer programmer? Hopefully this webpage can help you clear up some of those questions, suggest which programming language or languages would fit you best, and give you an idea of how long it might take to perfect your skills.</p>
 
-    <div id="front-showing">
-      <p>Front-end is what users see and interact with; it is like the face of a watch as well as the little knob of the side used to set time.</p>
-    </div>
-    <div id="back-showing">
-      <p>Back-end is how everything funtions behind the scenes; it is like the gears behind the clock face, macking sure the watch works correctly</p>
-    </div>
+      <div id="front-showing">
+        <blockquote>
+          <p>Front-end is what users see and interact with; it is like the face of a watch as well as the little knob of the side used to set time.</p>
+        </blockquote>
+      </div>
+      <div id="back-showing">
+        <blockquote>
+          <p>Back-end is how everything funtions behind the scenes; it is like the gears behind the clock face, macking sure the watch works correctly</p>
+        </blockquote>
+      </div>
 
-    <form id="info">
-          <div class="form-group-a">
-            <label for="interest">Which of these do you think would best fit your personality?</label>
-            <div class="radio">
-                <label>
-                <input type="radio" name="preference" value="front-end">
-                    front-end
-                </label>
-                </div>
-                <div class="radio">
-                <label>
-                    <input type="radio" name="preference" value="back-end">
-                    back-end
-                </label>
-                </div>
+      <form id="info">
+        <div class="form-group-a">
+          <label for="interest">Which of these do you think would best fit your personality?</label>
+          <div class="radio">
+            <label>
+            <input type="radio" name="preference" value="front-end">front-end</label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="preference" value="back-end">back-end</label>
+          </div>
         </div>
 
         <div class="form-group-b">
           <label for="experience">How much coding experience do you have:</label>
           <select class="form-control" id="experience">
-              <option></option>
-              <option>None at all</option>
-              <option>A little bit</option>
-              <option>A moderate amount</option>
+            <option></option>
+            <option>None at all</option>
+            <option>A little bit</option>
+            <option>A moderate amount</option>
           </select>
-      </div>
-            
-            <div class="form-group-c">
-              <label for="personality-type">Which of these four personality types do you think best describes your self:</label>
-              <select class="form-control" id="personality-type">
-                <option></option>
-                <option>Introverted & Passive</option>
-                <option>Extroverted & Passive</option>
-                <option>Introverted & Aggressive</option>
-                <option>Extroverted & Aggressive</option>
-              </select>
-            </div>
-
-            <div class="form-group-b">
-              <label for="hours-available">How many hours per day do you think you commit yourslef to learning a Programming language:</label>
-              <input id="hours-available" class="form-control" type="text">
-            </div>
-            <div class="form-group-testb">
-              <label for="days-available">How many days per week do you think you commit yourslef to learning a Programming language:</label>
-              <input id="days-available" class="form-control" type="text">
-            </div>
-
-            <button type="submit" class="btn">Submit</button>
-        </form> 
-        <div id="answer">
-            
-            <p>Your best match is <span id="match"></span>. If you commit to spend <span id="hours-show"></span> a day, and <span id="days-show"></span> a week, you could be a master of <span id="match"></span> in just <span id="output"></span> weeks!</p>
         </div>
-  </div>
-</body>
+              
+        <div class="form-group-c">
+          <label for="personality-type">Which of these four personality types do you think best describes your self:</label>
+          <select class="form-control" id="personality-type">
+            <option></option>
+            <option>Introverted & Passive</option>
+            <option>Extroverted & Passive</option>
+            <option>Introverted & Aggressive</option>
+            <option>Extroverted & Aggressive</option>
+          </select>
+        </div>
+
+        <div class="form-group-d">
+          <label for="hours-available">How many hours per day do you think you commit yourslef to learning a Programming language:</label>
+          <input id="hours-available" class="form-control-box" type="text">
+        </div>
+        <div class="form-group-e">
+          <label for="days-available">How many days per week do you think you commit yourslef to learning a Programming language:</label>
+          <input id="days-available" class="form-control-box" type="text">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form> 
+
+      <div id="answer">
+        <p>Your best match is <em><span class="match"></span></em>. If you commit to spend <span class="results" id="hours-show"></span> hours per day, and <span class="results" id="days-show"></span> days per week, you could be a master of <em><span class="match"></span></em> in just <span class="results" id="output"></span> weeks!</p>
+
+        <p><span id="disclaimer-small">(Mastery based on 1,000 hours spent learning)</span></p>
+      </div>
+    </div>
+  </body>
 </html>
