@@ -1,3 +1,7 @@
+.panel-body {
+  margin: 80px;
+  margin-top: 5px;
+}
 #front-showing {
   display: none;
   font-style: italic;
@@ -24,10 +28,13 @@
 .form-control-box {
   width: 50px;
 }
+.btn {
+  margin-top: 10px;
+}
 #answer {
   display: none;
-  margin-top: 40px;
-  font-size: 24px;
+  font-weight: bold;
+  font-size: medium;
 }
 .results {
   font-style: italic;

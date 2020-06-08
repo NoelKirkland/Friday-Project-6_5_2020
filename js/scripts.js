@@ -15,7 +15,7 @@ $(document).ready(function(){
     $("#back-showing").fadeToggle();
     $("#front-showing").hide();
   });
-  $("form#info").submit(function(event){
+  $("form#info").submit(function (event){
     const pref = $("input:radio[name=preference]:checked").val();
     const exp = $("#experience").val();
     const personality = $("#personality-type").val();
@@ -91,10 +91,10 @@ $(document).ready(function(){
       else{
         $(".match").text("Doesn't fit and current chriteria");
       }
-      $("#answer").show();
+      $("#answer").fadeIn();
       $("#hours-show").text(hours);
       $("#days-show").text(days);
-      $("#output").text(resultb.toFixed()); 
-    event.preventDefault();
+      $("#output").text(resultb.toFixed());
+      event.preventDefault();
   });
 });
